@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 191523996}
   - component: {fileID: 191523995}
   - component: {fileID: 191523994}
+  - component: {fileID: 191523997}
   m_Layer: 0
   m_Name: ScoreText
   m_TagString: Untagged
@@ -310,6 +311,18 @@ Transform:
   m_Father: {fileID: 12275726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &191523997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191523993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e21886a25032b24197a56df5ef7fa5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1287,7 @@ GameObject:
   - component: {fileID: 2027365653}
   - component: {fileID: 2027365655}
   - component: {fileID: 2027365654}
+  - component: {fileID: 2027365656}
   m_Layer: 0
   m_Name: CardText
   m_TagString: Untagged
@@ -1357,6 +1371,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2027365656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027365652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d000fa8d78b5847887eafb13f0da25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2102283467
 GameObject:
   m_ObjectHideFlags: 0
