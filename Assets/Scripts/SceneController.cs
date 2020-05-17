@@ -7,18 +7,30 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public const int gridRows = 2;
-    public const int gridCols = 4;
-    public const float offsetX = 4f;
-    public const float offsetY = 5f;
+    [SerializeField] private Player church;
+    [SerializeField] private Player army;
+    [SerializeField] private Player science;
+    [SerializeField] private Player rich;
 
-    [SerializeField] private Player[] players;
+    private int church_score = 0;
+    private int army_score = 0;
+    private int science_score = 0;
+    private int rich_score = 0;
 
-    private int _score = 0;
-
-    public void Restart()
+    public void Pass(int d_church, int d_army, int d_science, int d_rich)
     {
-        _score++;
-        players[0].scoreLabel.text = "Score: " + _score;
+        UnityEngine.Debug.Log("pass!");
+
+        church_score += d_church;
+        church.scoreLabel.text = "Score: " + church_score;
+
+        army_score += d_army;
+        army.scoreLabel.text = "Score: " + army_score;
+
+        science_score += d_science;
+        science.scoreLabel.text = "Score: " + science_score;
+
+        rich_score += d_rich;
+        rich.scoreLabel.text = "Score: " + rich_score;
     }
 }

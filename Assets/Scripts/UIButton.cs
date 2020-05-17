@@ -7,8 +7,8 @@ using UnityEngine;
 
 public class UIButton : MonoBehaviour
 {
-    [SerializeField] private GameObject targetObject;
-    [SerializeField] private string targetMessage;
+    [SerializeField] private SceneController sceneController;
+    [SerializeField] Card card;
     public Color highlightColor = Color.cyan;
 
     public void OnMouseOver()
@@ -37,9 +37,7 @@ public class UIButton : MonoBehaviour
     public void OnMouseUp()
     {
         transform.localScale /= 1.1f;
-        if (targetObject != null)
-        {
-            targetObject.SendMessage(targetMessage);
-        }
+
+        sceneController.Pass(card.church, card.army, card.science, card.rich);
     }
 }
