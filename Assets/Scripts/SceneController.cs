@@ -15,13 +15,10 @@ public class SceneController : MonoBehaviour
     [SerializeField] private Player[] players;
 
     private int _score = 0;
-   // [SerializeField] private TextMesh scoreLabel;
 
     public void Restart()
     {
-        // SceneManager.LoadScene("SampleScene");
         _score++;
-        //scoreLabel.text = "Score: " + _score;
         players[0].scoreLabel.text = "Score: " + _score;
     }
 }
